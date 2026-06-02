@@ -1,0 +1,87 @@
+#!/usr/bin/awk -f
+
+BEGIN {
+  RS = ""
+  FS = "\n"
+  print "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n" \
+    " <meta charset=\"UTF-8\">\n" \
+    " <meta property=\"og:locale\" content=\"en_US\">\n" \
+    " <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n" \
+    " <title></title>\n" \
+    " <link rel=\"stylesheet\" href=\"style.css\">\n" \
+    "</head>\n\n<body>\n <div class=\"container\">"
+  mode = "START"
+}
+
+mode == "START" && /^# / {
+  sub(/^# /, "")
+  split($0, arr, "|")
+  gsub(/[[:space:]]+$/, "", arr[1])
+  gsub(/^[[:space:]]+/, "", arr[1])
+  gsub(/[[:space:]]+$/, "", arr[2])
+  gsub(/^[[:space:]]+/, "", arr[2])
+  print " <header class=\"man-header\">\n" \
+    " <span>" arr[1] "</span>\n <span>" arr[2] "</span>\n" \
+    " <input type=\"checkbox\" id=\"theme-toggle\" class=\"hidden-trigger\">\n" \
+    " <span><label for=\"theme-toggle\" class=\"text-toggle\"></label></span>\n" \
+    " </header>\n <main>"
+  mode = "BODY"
+  next
+}
+
+mode == "BODY" && /^# .*\|.*\|/ {
+  close_previous()
+  sub(/^# /, "")
+  split($0, arr, "|")
+  for (i in arr) {
+    gsub(/[[:space:]]+$/, "", arr[i])
+    gsub(/^[[:space:]]+/, "", arr[i])
+  }
+  print " </main>\n\n <footer class=\"man-footer\">\n" \
+    " <span>" arr[1] "</span>\n <span>" arr[2] "</span>\n" \
+    " <span>" arr[3] "</span>\n </footer>"
+  mode = "DONE"
+  next
+}
+
+mode == "BODY" && /^# / {
+  close_previous()
+  title = substr($1, 3)
+  
+  if (title ~ /^(NAME|SYNOPSIS|OPTIONS|DESCRIPTION|SEE ALSO)/) {
+    print "\n <section>\n <h2>" title "</h2>\n <div class=\"section-content\">"
+    for (i = 2; i <= NF; i++) print " " $i
+    active_container = "SECTION"
+  } else {
+    print "\n <article>\n <h2 class=\"man-title\">" title "</h2>\n" \
+      " <section class=\"section-content article-text\">"
+    active_container = "ARTICLE"
+    print_paragraphs(2)
+  }
+  next
+}
+
+active_container == "ARTICLE" {
+  print_paragraphs(1)
+}
+
+END {
+  close_previous()
+  print " </div>\n</body>\n</html>"
+}
+
+function close_previous() {
+  if (active_container == "SECTION")
+    print " </div>\n </section>"
+  else if (active_container == "ARTICLE")
+    print " </section>\n </article>"
+  active_container = ""
+}
+
+function print_paragraphs(start) {
+  is_pre = ($1 ~ /^<pre>/)
+  if (!is_pre) print " <p>"
+  for (i = start; i <= NF; i++)
+    if ($i != "") print " " $i
+  if (!is_pre) print " </p>"
+}

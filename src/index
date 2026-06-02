@@ -1,0 +1,27 @@
+# home(7) | roomroofroot manual
+
+# NAME
+<b>roomroofroot</b> - unix and math enthusiast
+
+# OPTIONS
+[home]
+<a href="pages/res.html">[resources]</a>
+<a href="pages/repo.html">[repo]</a>
+<a href="pages/uses.html">[uses]</a>
+
+# CONTENT
+Hi! I'm roomroofroot ( expanded to <b>$</b> rm -rf / )
+
+This website hosts some random stuff.<br>
+For some cool stuff that I found useful, see [resources]<br>
+To see my project(s) or dotfiles, see [repo]
+
+The webpages try to resemble manpages (adapted from <a href="https://gyptazy.com">this cool site</a>)<br>
+I generate these pages using an awk script (see [repo])
+
+<b>Note:</b> the text at the top-right corner can be clicked to switch the theme.
+
+# SEE ALSO
+<a href="https://github.com/roomroofroot">github(1)</a>, <a href="https://codeberg.org/roomroofroot">codeberg(1)</a>
+
+# home(7) | 2026 | home(7)

@@ -1,0 +1,45 @@
+# res(7) | roomroofroot manual
+
+# DESCRIPTION
+<b>resources</b> - stuff that I find cool/useful
+
+# OPTIONS
+<a href="../index.html">[home]</a>
+[resources]
+<a href="repo.html">[repo]</a>
+<a href="uses.html">[uses]</a>
+
+# CONTENT
+
+<u><b>MATH RESOURCES AND TEXTBOOKS</b></u>
+
+<b>ladw</b> - Linear Algebra Done Wrong - <i>Sergei Treil</i> -
+<a href="https://sites.google.com/a/brown.edu/sergei-treil-homepage/linear-algebra-done-wrong">link</a><br>
+A nice middle-ground for learning LA through intuitive proofs,
+but an approach through matrices/determinants (like engg. students have to :/).
+
+<b>ladr</b> - Linear Algebra Done Right - <i>Sheldon Axler</i> -
+<a href="https://linear.axler.net/">link</a><br>
+An abstract approach to LA using linear operators on FDVS to simplify proofs.
+More engaging mathematically, but may not cover many applications.
+
+<b>diffyqs</b> - Notes on Differential Equations - <i>Jiří Lebl</i> -
+<a href="https://www.jirka.org/diffyqs/">link</a><br>
+Explains DEs nicely with sufficient rigour (useful for engg. students).
+
+<br><u><b>COMPUTER ENGG. + COMPUTER SCIENCE</b></u>
+
+<b>ee108b</b> - Digital Systems II, Stanford - <i>Christos Kozyrakis</i> -
+<a href="https://web.stanford.edu/class/archive/ee/ee108b/ee108b.1082/handouts/">slides</a><br>
+<b>cs152</b> - Computer Architecture, UC Berkeley - <i>Chris Fletcher</i> -
+<a href="https://inst.eecs.berkeley.edu/~cs152/sp26/">slides</a>
+
+<b>csapp</b> - Computer Systems, A Programmer's Perspective<br>
+
+<br>For software that I use/recommend, see [uses]
+
+# SEE ALSO
+Free/open textbooks - <a href="https://textbooks.aimath.org/textbooks/approved-textbooks/">math(1)</a>,
+<a href="https://github.com/EbookFoundation/free-programming-books/blob/main/books/free-programming-books-subjects.md">cs(1)</a>
+
+# res(7) | 2026 | res(7)
