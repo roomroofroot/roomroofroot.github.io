@@ -4,6 +4,7 @@ BEGIN {
   RS = ""
   FS = "\n"
   print "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n" \
+    " <link rel=\"icon\" href=\"data:,\">\n" \
     " <meta charset=\"UTF-8\">\n" \
     " <meta property=\"og:locale\" content=\"en_US\">\n" \
     " <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n" \
