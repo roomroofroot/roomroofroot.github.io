@@ -24,7 +24,9 @@ This project helped me learn the pipelined design, some RISC-V design choices an
 <a href="https://codeberg.org/roomroofroot/dots">src</a>
 
 <b>wpg</b> - awk script that generates such webpages from a simpler markup -
-<a href="https://github.com/roomroofroot/roomroofroot.github.io/blob/main/wpg">code</a>
+<a href="https://github.com/roomroofroot/roomroofroot.github.io/blob/main/wpg">code</a><br>
+The markup used is a mix of markdown and html, see some examples <a href="https://github.com/roomroofroot/roomroofroot.github.io/tree/main/src">here</a><br>
+Usage: <b>$ cat sample | ./wpg > sample.html </b>
 
 # SEE ALSO
 <a href="https://github.com/roomroofroot">github(1)</a>, <a href="https://codeberg.org/roomroofroot">codeberg(1)</a>
