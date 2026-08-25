@@ -1,7 +1,7 @@
 body {
   background: #000;
   color: #ccc;
-  font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, monospace;
+  font-family: ui-monospace, Consolas, monospace;
   font-size: 14px;
   line-height: 1.4;
   margin: 0;
@@ -28,23 +28,14 @@ h2, h3 { margin-top: 1.5em; }
 }
 
 footer { margin-top: 3em; margin-bottom: 0; }
-
 h1, h2, h3 { font-size: 14px; text-transform: uppercase; }
-
 .section-content { margin-left: 4ch; }
-
 a { color: #ccc; text-decoration: underline; }
-
 a:hover { background: #000; color: #fff; text-decoration: none; }
-
 .synopsis-box { background: #f4f4f4; padding: 1em; border-left: 3px solid #ccc; }
-
 table { border-collapse: collapse; }
-
 td { padding-right: 2em; vertical-align: top; }
-
 .nav-links { border-bottom: 1px solid #ddd; }
-
 .nav-links a { text-decoration: none; margin-right: 20px; font-weight: bold; }
 
 code {

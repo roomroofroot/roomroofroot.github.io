@@ -1,13 +1,13 @@
 # res(7) | roomroofroot manual
 
 # DESCRIPTION
-<b>resources</b> - stuff that I find cool/useful
+<b>resources</b> - stuff that I find useful
 
 # OPTIONS
 <a href="../index.html">[home]</a>
 <a href="blog/index.html">[blog]</a>
 [resources]
-<a href="repo.html">[repo]</a>
+<a href="misc.html">[misc]</a>
 
 # CONTENT
 
@@ -36,50 +36,7 @@ Explains DEs nicely with sufficient rigour (useful for engg. students).
 
 <b>csapp</b> - Computer Systems, A Programmer's Perspective
 
-<br><u><b>SOFTWARE/LIBS</b></u>
-
-List of software I use, and libs that I find cool
-
-<b>OS</b>
-<div style="padding-left:30px;">
-<b>void</b> - Void Linux with musl(1) - <a href="https://voidlinux.org">home</a><br>
-<b>busybox</b> - lightweight coreutils - <a href="https://busybox.net/">home</a>
-</div>
-
-<b>X11</b><br>
-<div style="padding-left: 30px;">
-<b>dwm</b> - tiling window manager -
-<a href="https://dwm.suckless.org/">link</a><br>
-<b>st</b> - terminal emulator -
-<a href="https://st.suckless.org/">link</a><br>
-<b>dmenu</b> - program menu/launcher -
-<a href="https://tools.suckless.org/dmenu/">link</a>
-</div>
-
-<b>Way</b><br>
-<div style="padding-left: 30px;">
-<s>I have been meaning to try out wayland, maybe via swc(1)</s><br>
-Finally trying wayland, using <b>neuswc</b>, <b>neuwld</b> - see wayland.fyi(1)<br>
-I'm using <b>wsxwm</b>, <b>st-wl</b>, <b>neumenu</b>, <b>swiv</b> at the moment.
-</div>
-
-<b>OTH</b><br>
-<div style="padding-left: 30px;">
-<b>noice</b> - file manager -
-<a href="https://git.2f30.org/noice/">src</a><br>
-<b>mtm</b> - terminal multiplexer -
-<a href="https://github.com/deadpixi/mtm">src</a><br>
-<b>clac</b> - stack based calculator, with postfix notation -
-<a href="https://github.com/soveran/clac">src</a><br>
-<b>cproc</b> - C compiler that uses qbe(1) -
-<a href="https://sr.ht/~mcf/cproc/">src</a><br>
-<b>opmac</b> - extended plain TeX macros -
-<a href="https://petr.olsak.net/opmac-e.html">link</a><br>
-<b>limine</b> - portable bootloader -
-<a href="https://github.com/limine-bootloader/limine">src</a>
-</div>
-
-<b>LIBS</b>
+<br><u><b>LIBS</b></u>
 <div style="padding-left:30px;">
 <a href="https://musl.libc.org/">musl(1)</a>,
 <a href="https://c9x.me/compile/">qbe(1)</a>
@@ -87,7 +44,5 @@ I'm using <b>wsxwm</b>, <b>st-wl</b>, <b>neumenu</b>, <b>swiv</b> at the moment.
 # SEE ALSO
 Open texts - <a href="https://textbooks.aimath.org/textbooks/approved-textbooks/">math(1)</a>,
 <a href="https://github.com/EbookFoundation/free-programming-books/blob/main/books/free-programming-books-subjects.md">cs(1)</a>
-<br>Wayland - <a href="https://github.com/michaelforney/swc">swc(1)</a>,
-<a href="https://wayland.fyi">wayland.fyi(1)</a>
 
 # res(7) | 2026 | res(7)
